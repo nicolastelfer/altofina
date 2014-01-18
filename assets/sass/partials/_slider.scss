@@ -1,0 +1,63 @@
+/**
+ ** Image Slider
+ **/
+
+// Overide default styles form bxSlider
+
+.bx-wrapper {
+	margin: 0 auto;
+
+	img {
+		width: 100%;
+	}
+
+	.bx-viewport {
+		background: transparent;
+		border: none;
+		height: auto !important;
+		left: 0;
+		@include no-shadow();
+	}
+
+	.bx-loading {
+		height: 40px;
+	}
+}
+
+/* THE SLIDER */
+.slider {
+	margin-bottom: 3em;
+
+	.slides {
+		margin: 0;
+		padding: 0;
+	}
+}
+
+/* SLIDER THUMBS */
+.slider-thumbs {
+	clear: both;
+}
+
+.slider-thumbs .slider-thumbs-item {
+	border: 1px solid $baseColorLight;
+	margin-bottom: .3em;
+	margin-right: .3em;
+	display: inline-block;
+	vertical-align: top;
+	overflow: hidden;
+	height: 40px;
+	width: 40px;
+
+}
+.slider-thumbs .slider-thumbs-item.active {
+	border:1px solid $baseColorDark;
+	transition: all .5s linear;
+	img {
+		opacity: .9;
+	}
+}
+
+.slider-thumbs .slider-thumbs-item img {
+	width: 100%;
+}

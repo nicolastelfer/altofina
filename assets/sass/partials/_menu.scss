@@ -1,0 +1,30 @@
+/**
+ ** Main Menu
+ **/
+
+#toggle-menu {
+	background: $blueColor;
+	color: $baseColorLight;
+	font-weight: bold;
+	font-size: 12px;
+	padding: .8em 1.2em;
+	margin-bottom: 1.5em;
+	float: right;
+}
+
+.nav {
+	float: right;
+	display: none;
+	margin-top: 0;
+	padding: 0;
+	text-align: right;
+	width: 100%;
+	li {
+		list-style: none;
+		a {
+			color: $baseColorDark;
+			font-size: 14px;
+			font-weight: bold;
+		}
+	}
+}

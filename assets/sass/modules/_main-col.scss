@@ -1,0 +1,26 @@
+/**
+ ** Main column
+ **/
+
+
+#main-col {
+	display: inline-block;
+	vertical-align: top;
+	width: 100%;
+	float: right;
+
+	.content {
+		.content-slider-thumbs {
+			margin-bottom: 1.5em;
+		}
+		.content-col {
+			width: 100%;
+		}
+	}
+}
+
+.content-col {
+	.content-description {
+		font-size: 12px;
+	}
+}

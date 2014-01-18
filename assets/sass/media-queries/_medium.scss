@@ -1,0 +1,65 @@
+/**
+ ** MQ- Medium
+ ** Tablet/small desktop
+ **/
+
+body {
+	background-color: red;
+}
+
+/* Main column */
+#main-col {
+	float: left;
+	display: inline-block;
+	vertical-align: top;
+	width: 80%;
+
+	.content {
+		.content-slider-thumbs, .content-wrapper {
+			display: inline-block;
+			vertical-align: top;
+		}
+		.content-slider-thumbs {
+			margin-bottom: 0;
+			width: 28%;
+		}
+		.content-wrapper {
+			width: 68%;
+			.content-col {
+				display: inline-block;
+				vertical-align: top;
+				padding: 0 2%;
+				width: 28%;
+			}
+		}
+	}
+}
+
+/* SLIDER THUMBS */
+.slider-thumbs {
+	.slider-thumbs-item {
+		height: 50px;
+		margin-bottom: .5em;
+		margin-right: .5em;
+		width: 50px;
+	}
+}
+
+/* Right column */
+#right-col {
+	float: right;
+	display: inline-block;
+	vertical-align: top;
+	width: 18%;
+
+	#toggle-menu {
+		display: none;
+	}
+
+	.nav {
+		display: block !important;
+		text-align: left;
+		float: none;
+		padding-left: 3em;
+	}
+}

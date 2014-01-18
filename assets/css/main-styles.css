@@ -1,0 +1,234 @@
+/**
+ ** Main Website styles
+ **/
+/* Imports */
+/**
+ ** Import - Base
+ **/
+/**
+ ** Variables
+ **/
+.mt-xs {
+  margin-top: 5px; }
+
+.mt-s {
+  margin-top: 10px; }
+
+.mt-m {
+  margin-top: 15px; }
+
+.mt-l {
+  margin-top: 25px; }
+
+/**
+ ** Mixins
+ **/
+/**
+ ** Colour guide
+ **/
+/**
+ ** BASE styles
+ **/
+body {
+  background-color: blue;
+  color: black;
+  font-size: 12px;
+  font-family: Helvetica, Arial, sans-serif; }
+
+#wrapper {
+  background-color: white;
+  margin: 1em;
+  padding: 3em; }
+
+/**
+ ** Typography styleguide
+ **/
+/* Headlines */
+h1, h2, h3, h4, h5 {
+  margin-top: 0; }
+
+h2 {
+  font-size: 18px; }
+
+.headline-1 {
+  color: #0099cc; }
+
+/**
+ ** Links and buttons style guide
+ **/
+a, button {
+  outline: none; }
+
+a {
+  text-decoration: none; }
+
+button {
+  color: blue;
+  border: 0; }
+
+/* Inline Links */
+.inline-link {
+  display: inline-block;
+  color: #0099cc;
+  vertical-align: middle; }
+  .inline-link:hover {
+    color: #00779e;
+    text-decoration: underline; }
+
+/**
+ ** Import - Partials
+ **/
+/**
+ ** Main Menu
+ **/
+#toggle-menu {
+  background: #0099cc;
+  color: white;
+  font-weight: bold;
+  font-size: 12px;
+  padding: .8em 1.2em;
+  margin-bottom: 1.5em;
+  float: right; }
+
+.nav {
+  float: right;
+  display: none;
+  margin-top: 0;
+  padding: 0;
+  text-align: right;
+  width: 100%; }
+  .nav li {
+    list-style: none; }
+    .nav li a {
+      color: black;
+      font-size: 14px;
+      font-weight: bold; }
+
+/**
+ ** Image Slider
+ **/
+.bx-wrapper {
+  margin: 0 auto; }
+  .bx-wrapper img {
+    width: 100%; }
+  .bx-wrapper .bx-viewport {
+    background: transparent;
+    border: none;
+    height: auto !important;
+    left: 0;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    box-shadow: none; }
+  .bx-wrapper .bx-loading {
+    height: 40px; }
+
+/* THE SLIDER */
+.slider {
+  margin-bottom: 3em; }
+  .slider .slides {
+    margin: 0;
+    padding: 0; }
+
+/* SLIDER THUMBS */
+.slider-thumbs {
+  clear: both; }
+
+.slider-thumbs .slider-thumbs-item {
+  border: 1px solid white;
+  margin-bottom: .3em;
+  margin-right: .3em;
+  display: inline-block;
+  vertical-align: top;
+  overflow: hidden;
+  height: 40px;
+  width: 40px; }
+
+.slider-thumbs .slider-thumbs-item.active {
+  border: 1px solid black;
+  transition: all .5s linear; }
+  .slider-thumbs .slider-thumbs-item.active img {
+    opacity: .9; }
+
+.slider-thumbs .slider-thumbs-item img {
+  width: 100%; }
+
+/* Layout */
+/**
+ ** Main column
+ **/
+#main-col {
+  display: inline-block;
+  vertical-align: top;
+  width: 100%;
+  float: right; }
+  #main-col .content .content-slider-thumbs {
+    margin-bottom: 1.5em; }
+  #main-col .content .content-col {
+    width: 100%; }
+
+.content-col .content-description {
+  font-size: 12px; }
+
+/**
+ ** Right column
+ **/
+#right-col {
+  float: left;
+  width: 100%; }
+
+/* Media Queries */
+@media (min-width: 40em) {
+  /**
+   ** MQ- Medium
+   ** Tablet/small desktop
+   **/
+  body {
+    background-color: red; }
+
+  /* Main column */
+  #main-col {
+    float: left;
+    display: inline-block;
+    vertical-align: top;
+    width: 80%; }
+    #main-col .content .content-slider-thumbs, #main-col .content .content-wrapper {
+      display: inline-block;
+      vertical-align: top; }
+    #main-col .content .content-slider-thumbs {
+      margin-bottom: 0;
+      width: 28%; }
+    #main-col .content .content-wrapper {
+      width: 68%; }
+      #main-col .content .content-wrapper .content-col {
+        display: inline-block;
+        vertical-align: top;
+        padding: 0 2%;
+        width: 28%; }
+
+  /* SLIDER THUMBS */
+  .slider-thumbs .slider-thumbs-item {
+    height: 50px;
+    margin-bottom: .5em;
+    margin-right: .5em;
+    width: 50px; }
+
+  /* Right column */
+  #right-col {
+    float: right;
+    display: inline-block;
+    vertical-align: top;
+    width: 18%; }
+    #right-col #toggle-menu {
+      display: none; }
+    #right-col .nav {
+      display: block !important;
+      text-align: left;
+      float: none;
+      padding-left: 3em; } }
+@media (min-width: 55em) {
+  /**
+   ** MQ- Large
+   ** Desktop/Big screens
+   **/
+  body {
+    background-color: green; } }

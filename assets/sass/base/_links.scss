@@ -1,0 +1,27 @@
+/**
+ ** Links and buttons style guide
+ **/
+
+a, button {
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+button {
+	color: blue;
+	border: 0;
+}
+
+/* Inline Links */
+.inline-link {
+	display: inline-block;
+	color: $blueColor;
+	vertical-align: middle;
+	&:hover {
+		color: $blueColorDark;
+		text-decoration: underline;
+	}
+}
