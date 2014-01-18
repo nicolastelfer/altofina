@@ -204,6 +204,8 @@ button {
         vertical-align: top;
         padding: 0 2%;
         width: 28%; }
+    #main-col .content.page {
+      padding-right: 20%; }
 
   /* SLIDER THUMBS */
   .slider-thumbs .slider-thumbs-item {
